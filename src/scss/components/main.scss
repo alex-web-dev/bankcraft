@@ -1,0 +1,29 @@
+.main {
+  padding-top: 146px;
+  padding-bottom: 120px;
+  flex: 1 1 auto;
+
+  &__section {
+    margin-top: 120px;
+  }
+
+  @media (max-width: 1180px) {
+    padding-bottom: 80px;
+
+    &__section {
+      margin-top: 80px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 83px;
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 45px;
+    
+    &__section {
+      margin-top: 45px;
+    }
+  }
+}

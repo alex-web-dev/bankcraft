@@ -1,0 +1,26 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__img {
+    max-height: 100%;
+    object-fit: contain;
+
+    &--rotate-180deg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &--lg {
+    width: 28px;
+    height: 28px;
+  }
+
+  &--sm {
+    width: 20px;
+    height: 20px;
+  }
+}

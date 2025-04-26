@@ -1,0 +1,152 @@
+.btn {
+  padding: 19px 32px;
+  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  background-color: var(--color-primary);
+  border: 1px solid transparent;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: color 0.35s, background 0.35s, border 0.35s;
+
+  &:disabled {
+    opacity: 0.75;
+    cursor: default;
+  }
+
+  &--xs {
+    padding: 10px 21px;
+    font-size: 14px;
+  }
+
+  &--py-xs {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  &--rounded-2xl {
+    border-radius: 50px;
+  }
+
+  &--black {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+
+  &--white {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+
+  &--white-border {
+    background-color: var(--color-white);
+    border-color: var(--color-gray-400);
+    color: var(--color-black);
+  }
+
+  &--upper {
+    text-transform: uppercase;
+  }
+
+  &--iflex {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--justify-start {
+    justify-content: flex-start;
+  }
+
+  &--justify-end {
+    justify-content: flex-end;
+  }
+
+  &--items-start {
+    align-items: flex-start;
+  }
+
+  &--items--end {
+    align-items: flex-end;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--text-left {
+    text-align: left;
+  }
+
+  &--text-xs {
+    font-size: 14px;
+  }
+
+  &--text-sm {
+    font-size: 16px;
+    line-height: 1.375;
+  }
+
+  &--regular {
+    font-weight: 400;
+  }
+
+  &__icon {
+    flex: 0 0 auto;
+
+    &:first-child:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &:last-child:not(:first-child) {
+      margin-left: 8px;
+    }
+
+    &--mx-xl {
+      &:first-child:not(:last-child) {
+        margin-right: 12px;
+      }
+
+      &:last-child:not(:first-child) {
+        margin-left: 12px;
+      }
+    }
+
+    &--mx-lg {
+      &:first-child:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &:last-child:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+
+    &--mx-sm {
+      &:first-child:not(:last-child) {
+        margin-right: 5px;
+      }
+
+      &:last-child:not(:first-child) {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  &__content {
+    text-align: left;
+  }
+}

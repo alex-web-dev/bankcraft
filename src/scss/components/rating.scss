@@ -1,0 +1,35 @@
+@use "../mixins" as *;
+
+.rating {
+  display: flex;
+
+  &__stars {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__star {
+    display: inline-block;
+    @include icon("../img/icons/star-gray-400.svg", 15px, 15px);
+  }
+
+  &__star:not(:first-child) {
+    margin-left: 4px;
+  }
+
+  &__active {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__active &__star {
+    background-image: url("../img/icons/star-orange.svg");
+  }
+}

@@ -1,0 +1,58 @@
+@use '../mixins' as *;
+
+.popular-search {
+  &__content {
+    height: auto;
+    visibility: visible;
+    overflow: visible;
+  }
+
+  &__main {
+    padding-top: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 12px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      padding: 5px 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:after {
+        margin-left: 10px;
+        @include pseudo-icon('../img/icons/next-white.svg', 12px, 12px);
+        transition: transform 0.4s;
+      }
+
+      &.accordion__btn--active {
+        &:after {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    &__content {
+      height: 0;
+      visibility: hidden;
+      overflow: hidden;
+    }
+
+    &__main {
+      padding-top: 15px;
+      padding-bottom: 5px;
+    }
+  }
+}

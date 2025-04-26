@@ -1,0 +1,14 @@
+.menu {
+  &__list {
+    margin-left: -32px;
+    margin-top: -8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__item {
+    margin-left: 32px;
+    margin-top: 8px;
+  }
+}

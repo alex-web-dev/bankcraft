@@ -1,0 +1,26 @@
+.info {
+  &__content {
+    padding: 60px 39px;
+    background-color: var(--color-white);
+    border-radius: 50px;
+  }
+
+  @media (max-width: 1180px) {
+    &__content {
+      padding: 50px 32px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__content {
+      border-radius: 32px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__content {
+      padding: 28px 20px;
+      border-radius: 24px;
+    }
+  }
+}

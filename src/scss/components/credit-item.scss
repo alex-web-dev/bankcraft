@@ -1,0 +1,75 @@
+.credit-item {
+  padding: 20px 12px 12px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-400);
+  border-radius: 20px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 8px;
+    flex: 0 0 auto;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8.33px;
+    border: 1px solid var(--color-gray-400);
+  }
+
+  &__logo-img {
+    max-width: 30px;
+  }
+
+  &__info {
+    flex: 1 1 auto;
+  }
+
+  &__title-info {
+    margin-left: 8px;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__info-text {
+    margin-top: 4px;
+  }
+
+  &__details {
+    margin-top: 20px;
+  }
+
+  &__detail {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+  }
+
+  &__detail-text {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__detail-info {
+    margin-left: 4px;
+
+    img {
+      display: block;
+      max-width: 15px;
+    }
+  }
+
+  &__btn {
+    margin-top: 20px;
+  }
+}

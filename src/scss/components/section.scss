@@ -1,0 +1,23 @@
+.section {
+  overflow: hidden;
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__footer {
+      margin-top: 24px;
+    }
+  }
+}
