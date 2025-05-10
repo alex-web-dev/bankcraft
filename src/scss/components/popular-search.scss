@@ -18,8 +18,30 @@
   }
 
   &__item {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      background-color: var(--color-white);
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0.3s, opacity 0.3s;
+    }
+
     &:not(:first-child) {
       margin-top: 12px;
+    }
+
+    &:hover {
+      &:before {
+        visibility: visible;
+        opacity: 1;
+      }
     }
   }
 

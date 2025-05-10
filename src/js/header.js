@@ -7,7 +7,7 @@ if ($header) {
 }
 
 function scrollHandler($header) {
-  if (window.innerWidth <= 991 && window.scrollY >= 10 && !$header.classList.contains("header--scroll")) {
+  if (window.scrollY >= 10 && !$header.classList.contains("header--scroll")) {
     $header.classList.add("header--scroll");
   } else if (window.scrollY < 10 && $header.classList.contains("header--scroll")) {
     $header.classList.remove("header--scroll");

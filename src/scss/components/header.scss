@@ -1,14 +1,15 @@
 .header {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 6;
   padding: 35px 0 32px;
   background-color: var(--color-gray-200);
   width: 100%;
-  transition: box-shadow 0.35s;
+  transition: box-shadow 0.35s, background 0.35s;
 
   &--scroll {
+    background-color: var(--color-white);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
