@@ -23,8 +23,17 @@
   }
 
   &--py-xs {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  &--px-lg {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  &--p-xs {
+    padding: 7px 20px;
   }
 
   &--rounded-2xl {
@@ -45,6 +54,13 @@
     background-color: var(--color-white);
     border-color: var(--color-gray-400);
     color: var(--color-black);
+
+    &.tabs-btns__btn--active {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+      color: var(--color-white);
+      cursor: default;
+    }
   }
 
   &--upper {

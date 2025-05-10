@@ -1,0 +1,24 @@
+.nav-btns {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-left: 12px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      &:not(:first-child) {
+        margin-top: 12px;
+        margin-left: 0;
+      }
+    }
+  }
+}

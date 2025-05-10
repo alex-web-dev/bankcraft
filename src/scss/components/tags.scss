@@ -1,0 +1,13 @@
+.tags {
+  &__list {
+    margin-top: -12px;
+    margin-left: -12px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-top: 12px;
+    margin-left: 12px;
+  }
+}

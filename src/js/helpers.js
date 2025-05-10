@@ -10,7 +10,7 @@ export function lockBody(lockBy = "") {
   document.body.style.paddingRight = scrollbarWidthPX;
   document.body.dataset.lockedBy = lockBy;
 
-  const $absoluteElems = document.querySelectorAll(".header");
+  const $absoluteElems = document.querySelectorAll(".header, .popup__dialog");
   $absoluteElems.forEach(($elem) => ($elem.style.paddingRight = scrollbarWidthPX));
 }
 
@@ -19,7 +19,7 @@ export function unlockBody() {
   document.body.style.paddingRight = "";
   document.body.removeAttribute("data-locked-by");
 
-  const $absoluteElems = document.querySelectorAll(".header");
+  const $absoluteElems = document.querySelectorAll(".header, .popup__dialog");
   $absoluteElems.forEach(($elem) => ($elem.style.paddingRight = ""));
 }
 
@@ -42,9 +42,30 @@ export function createElem(type, className, options) {
   return $elem;
 }
 
+export function getDayString(N) {
+  const lastDigit = N % 10;
+  const lastTwoDigits = N % 100;
+
+  if (lastTwoDigits >= 11 && lastTwoDigits <= 19) {
+    return "дней";
+  }
+
+  switch (lastDigit) {
+    case 1:
+      return "день";
+    case 2:
+    case 3:
+    case 4:
+      return "дня";
+    default:
+      return "дней";
+  }
+}
+
 export default {
   lockBody,
   unlockBody,
   extractNumber,
   createElem,
+  getDayString,
 };

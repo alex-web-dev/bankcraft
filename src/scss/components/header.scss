@@ -47,6 +47,10 @@
     flex: 0 0 auto;
   }
 
+  &__top-menu {
+    margin-left: 64px;
+  }
+
   &__menu-toggle {
     display: none;
   }
@@ -80,6 +84,10 @@
     }
 
     &__menu {
+      display: none;
+    }
+
+    &__top-menu {
       display: none;
     }
   }

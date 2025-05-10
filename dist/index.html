@@ -6,8 +6,8 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="shortcut icon" href="./favicon.png" />
     <title>БанкКрафт</title>
-    <script type="module" crossorigin src="./assets/index-BTCNX6aU.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BELr7jwI.css">
+    <script type="module" crossorigin src="./assets/main-DQYQurk4.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-7t1UGXEb.css">
   </head>
   <body>
     <header class="header">
@@ -17,43 +17,13 @@
             <a class="logo header__logo" href="index.html">
               <img class="logo__img" src="img/logo.svg" alt="" />
             </a>
-            <button class="btn btn--xs btn--iflex btn--regular btn--white-border btn--rounded-2xl header__location">
-              <img class="btn__icon btn__icon--mx-sm" src="img/icons/location-fill.svg" alt="" />
-              <span>Санкт-Петербург</span>
-            </button>
-            <form class="search header__search">
-              <div class="input search__input">
-                <input class="input__field input__field--rounded-2xl input__field--gray-300" type="text" placeholder="Поиск" />
-              </div>
-              <button class="icon search__btn">
-                <img class="icon__img" src="img/icons/search.svg" alt="" />
-              </button>
-            </form>
-            <div class="social-btns header__social-btns">
-              <div class="social-btns__list">
-                <button class="social-btns__item">
-                  <img class="social-btns__img" src="img/icons/whatsapp-primary.svg" alt="" />
-                </button>
-                <button class="social-btns__item">
-                  <img class="social-btns__img" src="img/icons/telegram-primary.svg" alt="" />
-                </button>
-                <button class="social-btns__item">
-                  <img class="social-btns__img" src="img/icons/vk-primary.svg" alt="" />
-                </button>
-              </div>
-            </div>
-            <button class="menu-toggle header__menu-toggle js-toggle-menu">
-              <span class="menu-toggle__lines"></span>
-            </button>
-          </div>
-          <div class="header__bottom">
-            <nav class="menu header__menu">
+            <nav class="menu header__top-menu">
               <ul class="menu__list">
                 <li class="menu__item">
                   <a class="link link--iflex link--medium menu__link" href="#">Кредиты</a>
                 </li>
                 <li class="menu__item">
-                  <a class="link link--iflex link--medium menu__link" href="#">Займы</a>
+                  <a class="link link--iflex link--medium menu__link" href="offers.html">Займы</a>
                 </li>
                 <li class="menu__item">
                   <a class="link link--iflex link--medium menu__link" href="#">Ипотека</a>
@@ -72,6 +42,19 @@
                 </li>
               </ul>
             </nav>
+            <div class="social-btns header__social-btns">
+              <div class="social-btns__list">
+                <button class="circle circle--white-border social-btns__item js-open-popup" data-popup-name="location">
+                  <img class="circle__img" src="img/icons/location-fill.svg" alt="" />
+                </button>
+                <button class="circle circle--white-border social-btns__item">
+                  <img class="circle__img" src="img/icons/search.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <button class="menu-toggle header__menu-toggle js-toggle-menu">
+              <span class="menu-toggle__lines"></span>
+            </button>
           </div>
         </div>
       </div>
@@ -104,7 +87,7 @@
                   <a class="link link--iflex link--medium mobile-menu__link" href="#">Кредиты</a>
                 </li>
                 <li class="mobile-menu__item">
-                  <a class="link link--iflex link--medium mobile-menu__link" href="#">Займы</a>
+                  <a class="link link--iflex link--medium mobile-menu__link" href="offers.html">Займы</a>
                 </li>
                 <li class="mobile-menu__item">
                   <a class="link link--iflex link--medium mobile-menu__link" href="#">Ипотека</a>
@@ -122,19 +105,6 @@
                   <a class="link link--iflex link--medium mobile-menu__link" href="#">Контакты</a>
                 </li>
               </ul>
-              <div class="social-btns mobile-menu__social-btns">
-                <div class="social-btns__list">
-                  <button class="social-btns__item">
-                    <img class="social-btns__img" src="img/icons/whatsapp-primary.svg" alt="" />
-                  </button>
-                  <button class="social-btns__item">
-                    <img class="social-btns__img" src="img/icons/telegram-primary.svg" alt="" />
-                  </button>
-                  <button class="social-btns__item">
-                    <img class="social-btns__img" src="img/icons/vk-primary.svg" alt="" />
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -182,29 +152,27 @@
             <div class="credits">
               <div class="credits__list">
                 <div class="credit-item credits__item">
-                  <div class="credit-item__header">
-                    <div class="credit-item__logo">
-                      <img class="credit-item__logo-img" src="img/credit-logos/bistrodengi.png" alt="" />
+                  <div class="credit-header credit-item__header">
+                    <div class="credit-header__logo">
+                      <img class="credit-header__logo-img" src="img/credit-logos/bistrodengi.png" alt="" />
+                      <span class="credit-header__logo-status">
+                        <img src="img/icons/security.svg" alt="" />
+                      </span>
                     </div>
-                    <div class="credit-item__info">
-                      <h3 class="title title--4 title--flex title--justify-between credit-item__title">
+                    <div class="credit-header__main">
+                      <h3 class="title title--4 title--flex title--justify-between credit-header__title">
                         <span>Быстроденьги</span>
-                        <span class="credit-item__title-info tooltip">
-                          <span class="tooltip__btn">
-                            <img src="img/icons/info-primary.svg" alt="" />
-                          </span>
-                          <div class="tooltip__main">
-                            <span class="text text--sm text--space-nowrap">Информация</span>
-                          </div>
-                        </span>
+                        <button class="credit-header__title-info js-open-popup" data-popup-name="offer">
+                          <img src="img/icons/info-primary.svg" alt="" />
+                        </button>
                       </h3>
-                      <p class="text text--xs text--light credit-item__info-text">Займ бесплатно на карту</p>
+                      <p class="text text--xs text--light credit-header__main-text">Займ бесплатно на карту</p>
                     </div>
                   </div>
                   <div class="credit-item__details">
                     <div class="credit-item__detail">
-                      <span class="text text--sm text--iflex credit-item__detail-text">Срок без %</span>
-                      <span class="text text--sm text--medium credit-item__detail-value">10 дн.</span>
+                      <span class="text text--sm text--iflex credit-item__detail-text">Сумма до</span>
+                      <span class="text text--sm text--medium credit-item__detail-value">100 000 руб.</span>
                     </div>
                     <div class="credit-item__detail">
                       <span class="text text--sm text--iflex credit-item__detail-text">Срок</span>
@@ -228,33 +196,37 @@
                       <span class="text text--sm text--iflex credit-item__detail-text">Ставка</span>
                       <span class="text text--sm text--medium credit-item__detail-value">0 - 0,8% дн.</span>
                     </div>
+                    <div class="credit-item__detail">
+                      <span class="text text--sm text--iflex credit-item__detail-text">Срок без %</span>
+                      <span class="text text--sm text--medium credit-item__detail-value">10 дн.</span>
+                    </div>
                   </div>
-                  <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Получить деньги</button>
+                  <div class="credit-item__footer">
+                    <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Получить деньги</button>
+                  </div>
                 </div>
                 <div class="credit-item credits__item">
-                  <div class="credit-item__header">
-                    <div class="credit-item__logo">
-                      <img class="credit-item__logo-img" src="img/credit-logos/bistrodengi.png" alt="" />
+                  <div class="credit-header credit-item__header">
+                    <div class="credit-header__logo">
+                      <img class="credit-header__logo-img" src="img/credit-logos/bistrodengi.png" alt="" />
+                      <span class="credit-header__logo-status">
+                        <img src="img/icons/security.svg" alt="" />
+                      </span>
                     </div>
-                    <div class="credit-item__info">
-                      <h3 class="title title--4 title--flex title--justify-between credit-item__title">
+                    <div class="credit-header__main">
+                      <h3 class="title title--4 title--flex title--justify-between credit-header__title">
                         <span>Быстроденьги</span>
-                        <span class="credit-item__title-info tooltip">
-                          <span class="tooltip__btn">
-                            <img src="img/icons/info-primary.svg" alt="" />
-                          </span>
-                          <div class="tooltip__main">
-                            <span class="text text--sm text--space-nowrap">Информация</span>
-                          </div>
-                        </span>
+                        <button class="credit-header__title-info js-open-popup" data-popup-name="offer">
+                          <img src="img/icons/info-primary.svg" alt="" />
+                        </button>
                       </h3>
-                      <p class="text text--xs text--light credit-item__info-text">Займ бесплатно на карту</p>
+                      <p class="text text--xs text--light credit-header__main-text">Займ бесплатно на карту</p>
                     </div>
                   </div>
                   <div class="credit-item__details">
                     <div class="credit-item__detail">
-                      <span class="text text--sm text--iflex credit-item__detail-text">Срок без %</span>
-                      <span class="text text--sm text--medium credit-item__detail-value">10 дн.</span>
+                      <span class="text text--sm text--iflex credit-item__detail-text">Сумма до</span>
+                      <span class="text text--sm text--medium credit-item__detail-value">100 000 руб.</span>
                     </div>
                     <div class="credit-item__detail">
                       <span class="text text--sm text--iflex credit-item__detail-text">Срок</span>
@@ -278,33 +250,37 @@
                       <span class="text text--sm text--iflex credit-item__detail-text">Ставка</span>
                       <span class="text text--sm text--medium credit-item__detail-value">0 - 0,8% дн.</span>
                     </div>
+                    <div class="credit-item__detail">
+                      <span class="text text--sm text--iflex credit-item__detail-text">Срок без %</span>
+                      <span class="text text--sm text--medium credit-item__detail-value">10 дн.</span>
+                    </div>
                   </div>
-                  <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Получить деньги</button>
+                  <div class="credit-item__footer">
+                    <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Получить деньги</button>
+                  </div>
                 </div>
                 <div class="credit-item credits__item">
-                  <div class="credit-item__header">
-                    <div class="credit-item__logo">
-                      <img class="credit-item__logo-img" src="img/credit-logos/bistrodengi.png" alt="" />
+                  <div class="credit-header credit-item__header">
+                    <div class="credit-header__logo">
+                      <img class="credit-header__logo-img" src="img/credit-logos/bistrodengi.png" alt="" />
+                      <span class="credit-header__logo-status">
+                        <img src="img/icons/security.svg" alt="" />
+                      </span>
                     </div>
-                    <div class="credit-item__info">
-                      <h3 class="title title--4 title--flex title--justify-between credit-item__title">
+                    <div class="credit-header__main">
+                      <h3 class="title title--4 title--flex title--justify-between credit-header__title">
                         <span>Быстроденьги</span>
-                        <span class="credit-item__title-info tooltip">
-                          <span class="tooltip__btn">
-                            <img src="img/icons/info-primary.svg" alt="" />
-                          </span>
-                          <div class="tooltip__main">
-                            <span class="text text--sm text--space-nowrap">Информация</span>
-                          </div>
-                        </span>
+                        <button class="credit-header__title-info js-open-popup" data-popup-name="offer">
+                          <img src="img/icons/info-primary.svg" alt="" />
+                        </button>
                       </h3>
-                      <p class="text text--xs text--light credit-item__info-text">Займ бесплатно на карту</p>
+                      <p class="text text--xs text--light credit-header__main-text">Займ бесплатно на карту</p>
                     </div>
                   </div>
                   <div class="credit-item__details">
                     <div class="credit-item__detail">
-                      <span class="text text--sm text--iflex credit-item__detail-text">Срок без %</span>
-                      <span class="text text--sm text--medium credit-item__detail-value">10 дн.</span>
+                      <span class="text text--sm text--iflex credit-item__detail-text">Сумма до</span>
+                      <span class="text text--sm text--medium credit-item__detail-value">100 000 руб.</span>
                     </div>
                     <div class="credit-item__detail">
                       <span class="text text--sm text--iflex credit-item__detail-text">Срок</span>
@@ -328,33 +304,37 @@
                       <span class="text text--sm text--iflex credit-item__detail-text">Ставка</span>
                       <span class="text text--sm text--medium credit-item__detail-value">0 - 0,8% дн.</span>
                     </div>
+                    <div class="credit-item__detail">
+                      <span class="text text--sm text--iflex credit-item__detail-text">Срок без %</span>
+                      <span class="text text--sm text--medium credit-item__detail-value">10 дн.</span>
+                    </div>
                   </div>
-                  <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Получить деньги</button>
+                  <div class="credit-item__footer">
+                    <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Получить деньги</button>
+                  </div>
                 </div>
                 <div class="credit-item credits__item">
-                  <div class="credit-item__header">
-                    <div class="credit-item__logo">
-                      <img class="credit-item__logo-img" src="img/credit-logos/bistrodengi.png" alt="" />
+                  <div class="credit-header credit-item__header">
+                    <div class="credit-header__logo">
+                      <img class="credit-header__logo-img" src="img/credit-logos/bistrodengi.png" alt="" />
+                      <span class="credit-header__logo-status">
+                        <img src="img/icons/security.svg" alt="" />
+                      </span>
                     </div>
-                    <div class="credit-item__info">
-                      <h3 class="title title--4 title--flex title--justify-between credit-item__title">
+                    <div class="credit-header__main">
+                      <h3 class="title title--4 title--flex title--justify-between credit-header__title">
                         <span>Быстроденьги</span>
-                        <span class="credit-item__title-info tooltip">
-                          <span class="tooltip__btn">
-                            <img src="img/icons/info-primary.svg" alt="" />
-                          </span>
-                          <div class="tooltip__main">
-                            <span class="text text--sm text--space-nowrap">Информация</span>
-                          </div>
-                        </span>
+                        <button class="credit-header__title-info js-open-popup" data-popup-name="offer">
+                          <img src="img/icons/info-primary.svg" alt="" />
+                        </button>
                       </h3>
-                      <p class="text text--xs text--light credit-item__info-text">Займ бесплатно на карту</p>
+                      <p class="text text--xs text--light credit-header__main-text">Займ бесплатно на карту</p>
                     </div>
                   </div>
                   <div class="credit-item__details">
                     <div class="credit-item__detail">
-                      <span class="text text--sm text--iflex credit-item__detail-text">Срок без %</span>
-                      <span class="text text--sm text--medium credit-item__detail-value">10 дн.</span>
+                      <span class="text text--sm text--iflex credit-item__detail-text">Сумма до</span>
+                      <span class="text text--sm text--medium credit-item__detail-value">100 000 руб.</span>
                     </div>
                     <div class="credit-item__detail">
                       <span class="text text--sm text--iflex credit-item__detail-text">Срок</span>
@@ -378,8 +358,14 @@
                       <span class="text text--sm text--iflex credit-item__detail-text">Ставка</span>
                       <span class="text text--sm text--medium credit-item__detail-value">0 - 0,8% дн.</span>
                     </div>
+                    <div class="credit-item__detail">
+                      <span class="text text--sm text--iflex credit-item__detail-text">Срок без %</span>
+                      <span class="text text--sm text--medium credit-item__detail-value">10 дн.</span>
+                    </div>
                   </div>
-                  <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Получить деньги</button>
+                  <div class="credit-item__footer">
+                    <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Получить деньги</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -397,23 +383,18 @@
             <div class="credits">
               <div class="credits__list">
                 <div class="credit-item credits__item">
-                  <div class="credit-item__header">
-                    <div class="credit-item__logo">
-                      <img class="credit-item__logo-img" src="img/credit-logos/scb.png" alt="" />
+                  <div class="credit-header credit-item__header">
+                    <div class="credit-header__logo">
+                      <img class="credit-header__logo-img" src="img/credit-logos/scb.png" alt="" />
                     </div>
-                    <div class="credit-item__info">
-                      <h3 class="title title--4 title--flex title--justify-between credit-item__title">
+                    <div class="credit-header__main">
+                      <h3 class="title title--4 title--flex title--justify-between credit-header__title">
                         <span>Совкомбанк</span>
-                        <span class="credit-item__title-info tooltip">
-                          <span class="tooltip__btn">
-                            <img src="img/icons/info-primary.svg" alt="" />
-                          </span>
-                          <div class="tooltip__main">
-                            <span class="text text--sm text--space-nowrap">Информация</span>
-                          </div>
-                        </span>
+                        <button class="credit-header__title-info js-open-popup" data-popup-name="offer">
+                          <img src="img/icons/info-primary.svg" alt="" />
+                        </button>
                       </h3>
-                      <p class="text text--xs text--light credit-item__info-text">Кредит наличными</p>
+                      <p class="text text--xs text--light credit-header__main-text">Кредит наличными</p>
                     </div>
                   </div>
                   <div class="credit-item__details">
@@ -448,26 +429,23 @@
                       <span class="text text--sm text--medium credit-item__detail-value">50 000 руб.</span>
                     </div>
                   </div>
-                  <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Получить деньги</button>
+                  <div class="credit-item__footer">
+                    <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Отправить заявку</button>
+                  </div>
                 </div>
                 <div class="credit-item credits__item">
-                  <div class="credit-item__header">
-                    <div class="credit-item__logo">
-                      <img class="credit-item__logo-img" src="img/credit-logos/scb.png" alt="" />
+                  <div class="credit-header credit-item__header">
+                    <div class="credit-header__logo">
+                      <img class="credit-header__logo-img" src="img/credit-logos/scb.png" alt="" />
                     </div>
-                    <div class="credit-item__info">
-                      <h3 class="title title--4 title--flex title--justify-between credit-item__title">
+                    <div class="credit-header__main">
+                      <h3 class="title title--4 title--flex title--justify-between credit-header__title">
                         <span>Совкомбанк</span>
-                        <span class="credit-item__title-info tooltip">
-                          <span class="tooltip__btn">
-                            <img src="img/icons/info-primary.svg" alt="" />
-                          </span>
-                          <div class="tooltip__main">
-                            <span class="text text--sm text--space-nowrap">Информация</span>
-                          </div>
-                        </span>
+                        <button class="credit-header__title-info js-open-popup" data-popup-name="offer">
+                          <img src="img/icons/info-primary.svg" alt="" />
+                        </button>
                       </h3>
-                      <p class="text text--xs text--light credit-item__info-text">Кредит наличными</p>
+                      <p class="text text--xs text--light credit-header__main-text">Кредит наличными</p>
                     </div>
                   </div>
                   <div class="credit-item__details">
@@ -502,26 +480,23 @@
                       <span class="text text--sm text--medium credit-item__detail-value">50 000 руб.</span>
                     </div>
                   </div>
-                  <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Получить деньги</button>
+                  <div class="credit-item__footer">
+                    <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Отправить заявку</button>
+                  </div>
                 </div>
                 <div class="credit-item credits__item">
-                  <div class="credit-item__header">
-                    <div class="credit-item__logo">
-                      <img class="credit-item__logo-img" src="img/credit-logos/scb.png" alt="" />
+                  <div class="credit-header credit-item__header">
+                    <div class="credit-header__logo">
+                      <img class="credit-header__logo-img" src="img/credit-logos/scb.png" alt="" />
                     </div>
-                    <div class="credit-item__info">
-                      <h3 class="title title--4 title--flex title--justify-between credit-item__title">
+                    <div class="credit-header__main">
+                      <h3 class="title title--4 title--flex title--justify-between credit-header__title">
                         <span>Совкомбанк</span>
-                        <span class="credit-item__title-info tooltip">
-                          <span class="tooltip__btn">
-                            <img src="img/icons/info-primary.svg" alt="" />
-                          </span>
-                          <div class="tooltip__main">
-                            <span class="text text--sm text--space-nowrap">Информация</span>
-                          </div>
-                        </span>
+                        <button class="credit-header__title-info js-open-popup" data-popup-name="offer">
+                          <img src="img/icons/info-primary.svg" alt="" />
+                        </button>
                       </h3>
-                      <p class="text text--xs text--light credit-item__info-text">Кредит наличными</p>
+                      <p class="text text--xs text--light credit-header__main-text">Кредит наличными</p>
                     </div>
                   </div>
                   <div class="credit-item__details">
@@ -556,26 +531,23 @@
                       <span class="text text--sm text--medium credit-item__detail-value">50 000 руб.</span>
                     </div>
                   </div>
-                  <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Получить деньги</button>
+                  <div class="credit-item__footer">
+                    <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Отправить заявку</button>
+                  </div>
                 </div>
                 <div class="credit-item credits__item">
-                  <div class="credit-item__header">
-                    <div class="credit-item__logo">
-                      <img class="credit-item__logo-img" src="img/credit-logos/scb.png" alt="" />
+                  <div class="credit-header credit-item__header">
+                    <div class="credit-header__logo">
+                      <img class="credit-header__logo-img" src="img/credit-logos/scb.png" alt="" />
                     </div>
-                    <div class="credit-item__info">
-                      <h3 class="title title--4 title--flex title--justify-between credit-item__title">
+                    <div class="credit-header__main">
+                      <h3 class="title title--4 title--flex title--justify-between credit-header__title">
                         <span>Совкомбанк</span>
-                        <span class="credit-item__title-info tooltip">
-                          <span class="tooltip__btn">
-                            <img src="img/icons/info-primary.svg" alt="" />
-                          </span>
-                          <div class="tooltip__main">
-                            <span class="text text--sm text--space-nowrap">Информация</span>
-                          </div>
-                        </span>
+                        <button class="credit-header__title-info js-open-popup" data-popup-name="offer">
+                          <img src="img/icons/info-primary.svg" alt="" />
+                        </button>
                       </h3>
-                      <p class="text text--xs text--light credit-item__info-text">Кредит наличными</p>
+                      <p class="text text--xs text--light credit-header__main-text">Кредит наличными</p>
                     </div>
                   </div>
                   <div class="credit-item__details">
@@ -610,7 +582,9 @@
                       <span class="text text--sm text--medium credit-item__detail-value">50 000 руб.</span>
                     </div>
                   </div>
-                  <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Получить деньги</button>
+                  <div class="credit-item__footer">
+                    <button class="btn btn--py-xs btn--upper btn--full credit-item__btn">Отправить заявку</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -999,45 +973,32 @@
             <a class="logo header__logo" href="index.html">
               <img class="logo__img" src="img/logo.svg" alt="" />
             </a>
-            <div class="social-btns footer__social-btns">
-              <div class="social-btns__list">
-                <button class="social-btns__item">
-                  <img class="social-btns__img" src="img/icons/whatsapp-primary.svg" alt="" />
-                </button>
-                <button class="social-btns__item">
-                  <img class="social-btns__img" src="img/icons/telegram-primary.svg" alt="" />
-                </button>
-                <button class="social-btns__item">
-                  <img class="social-btns__img" src="img/icons/vk-primary.svg" alt="" />
-                </button>
-              </div>
-            </div>
           </div>
           <div class="footer__menu">
             <ul class="footer__menu-list">
               <li class="footer__menu-item">
-                <a class="link footer__menu-link" href="#">О сервисе</a>
+                <a class="link link--medium footer__menu-link" href="#">О сервисе</a>
               </li>
               <li class="footer__menu-item">
-                <a class="link footer__menu-link" href="#">Кредиты</a>
+                <a class="link link--medium footer__menu-link" href="#">Кредиты</a>
               </li>
               <li class="footer__menu-item">
-                <a class="link footer__menu-link" href="#">Ипотека</a>
+                <a class="link link--medium footer__menu-link" href="#">Ипотека</a>
               </li>
               <li class="footer__menu-item">
-                <a class="link footer__menu-link" href="#">Статьи</a>
+                <a class="link link--medium footer__menu-link" href="#">Статьи</a>
               </li>
               <li class="footer__menu-item">
-                <a class="link footer__menu-link" href="#">Контакты</a>
+                <a class="link link--medium footer__menu-link" href="#">Контакты</a>
               </li>
               <li class="footer__menu-item">
-                <a class="link footer__menu-link" href="#">Займы</a>
+                <a class="link link--medium footer__menu-link" href="offers.html">Займы</a>
               </li>
               <li class="footer__menu-item">
-                <a class="link footer__menu-link" href="#">Банки</a>
+                <a class="link link--medium footer__menu-link" href="#">Банки</a>
               </li>
               <li class="footer__menu-item">
-                <a class="link footer__menu-link" href="#">Новости</a>
+                <a class="link link--medium footer__menu-link" href="#">Новости</a>
               </li>
             </ul>
           </div>
@@ -1077,8 +1038,10 @@
             <p>
               Мы используем файлы cookie, чтобы предоставить пользователям больше возможностей при посещении сайта Банккрафт.ру. Условия
               использования смотрите
-              <a href="#" target="_blank">здесь</a>
-              .
+              <span class="text__space-nowrap">
+                <a href="#" target="_blank">здесь</a>
+                .
+              </span>
             </p>
             <p>
               Сервис не занимается деятельностью по предоставлению банковских услуг и выдаче займов. Содержание сайта не является
@@ -1099,6 +1062,168 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" data-popup-name="offer" data-popup-scrollable>
+      <div class="popup__body">
+        <div class="popup__dialog popup__dialog--top">
+          <div class="credit-info popup__content">
+            <div class="credit-info__top">
+              <div class="credit-header credit-info__header">
+                <div class="credit-header__logo">
+                  <img class="credit-header__logo-img" src="img/credit-logos/bistrodengi.png" alt="" />
+                </div>
+                <div class="credit-header__main">
+                  <div class="title title--4 title--flex title--justify-between credit-header__title">Быстроденьги</div>
+                  <p class="text text--xs text--light credit-header__main-text">Займ бесплатно на карту</p>
+                </div>
+              </div>
+              <button class="btn btn--py-xs btn--px-lg btn--upper credit-info__top-btn">Получить деньги</button>
+            </div>
+            <div class="credit-info__price">
+              <div class="title title--2 credit-info__price-item">до 100 000 руб.</div>
+              <div class="title title--2 credit-info__price-item">до 365 дней</div>
+            </div>
+            <div class="credit-info__tabs">
+              <div class="nav-btns credit-info__tabs-btns">
+                <div class="nav-btns__list tabs-btns" data-tabs-name="credit-info">
+                  <button class="btn btn--p-xs btn--white-border nav-btns__item tabs-btns__btn tabs-btns__btn--active">
+                    Общие условия
+                  </button>
+                  <button class="btn btn--p-xs btn--white-border nav-btns__item tabs-btns__btn">Требования и документы</button>
+                </div>
+              </div>
+              <div class="tabs-list credit-info__tabs-list" data-tabs-name="credit-info">
+                <div class="tabs-list__item tabs-list__item--active">
+                  <div class="credit-info__details">
+                    <div class="credit-info__details-col">
+                      <div class="credit-info__detail">
+                        <span class="text text--sm credit-info__detail-label">Сумма:</span>
+                        <span class="text text--sm text--medium credit-info__detail-value">от 1000 до 100 000 руб.</span>
+                      </div>
+                      <div class="credit-info__detail">
+                        <span class="text text--sm credit-info__detail-label">Срок:</span>
+                        <span class="text text--sm text--medium credit-info__detail-value">до 365 дней</span>
+                      </div>
+                      <div class="credit-info__detail">
+                        <span class="text text--sm credit-info__detail-label">Ставка в день:</span>
+                        <span class="text text--sm text--medium credit-info__detail-value">до 0,8%</span>
+                      </div>
+                      <div class="credit-info__detail">
+                        <span class="text text--sm credit-info__detail-label">Полная стоимость займа:</span>
+                        <span class="text text--sm text--medium credit-info__detail-value">до 292% в год</span>
+                      </div>
+                      <div class="credit-info__detail">
+                        <span class="text text--sm credit-info__detail-label">Срок принятия решения:</span>
+                        <span class="text text--sm text--medium credit-info__detail-value">5 минут</span>
+                      </div>
+                    </div>
+                    <div class="credit-info__details-col">
+                      <div class="credit-info__detail credit-info__detail--column">
+                        <span class="text text--sm credit-info__detail-label credit-info__detail-label--mb-xl">
+                          Способ получения средств:
+                        </span>
+                        <span class="text text--sm text--medium credit-info__detail-value">
+                          в офисе микрофинансовой организации, на банковскую карту, на банковский счет, переводо, Золотая Корона, Webmoney,
+                          в Евросети, на дом, ЮMoney, Лидер, Юнистрим, электронный кошелек, без посещения офиса, MasterCard, через интернет
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs-list__item">
+                  <div class="credit-info__details">
+                    <div class="credit-info__details-col">
+                      <div class="credit-info__detail">
+                        <span class="text text--sm credit-info__detail-label">Сумма:</span>
+                        <span class="text text--sm text--medium credit-info__detail-value">от 1000 до 100 000 руб.</span>
+                      </div>
+                      <div class="credit-info__detail">
+                        <span class="text text--sm credit-info__detail-label">Срок:</span>
+                        <span class="text text--sm text--medium credit-info__detail-value">до 365 дней</span>
+                      </div>
+                    </div>
+                    <div class="credit-info__details-col">
+                      <div class="credit-info__detail credit-info__detail--column">
+                        <span class="text text--sm credit-info__detail-label credit-info__detail-label--mb-xl">
+                          Способ получения средств:
+                        </span>
+                        <span class="text text--sm text--medium credit-info__detail-value">
+                          в офисе микрофинансовой организации, на банковскую карту, на банковский счет, переводо, Золотая Корона, Webmoney,
+                          в Евросети, на дом, ЮMoney, Лидер, Юнистрим, электронный кошелек, без посещения офиса, MasterCard, через интернет
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" data-popup-name="location" data-popup-scrollable>
+      <div class="popup__body">
+        <div class="popup__dialog popup__dialog--top">
+          <div class="location popup__content">
+            <div class="title title--2 location__title">Выберите город или регион</div>
+            <div class="tags location__popular">
+              <div class="tags__list">
+                <button class="tag tag--active tags__item">Москва</button>
+                <button class="tag tag--active tags__item">Санкт-Петербург</button>
+                <button class="tag tag--active tags__item">Екатеринбург</button>
+                <button class="tag tag--active tags__item">Казань</button>
+                <button class="tag tag--active tags__item">Нижний Новгород</button>
+                <button class="tag tag--active tags__item">Владивосток</button>
+                <button class="tag tag--active tags__item">Сочи</button>
+              </div>
+            </div>
+            <div class="location__cols">
+              <div class="location__col">
+                <button class="link link--medium location__btn">Москва</button>
+                <button class="link link--medium location__btn">Московская область</button>
+                <button class="link link--medium location__btn">Санкт-Петербург</button>
+                <button class="link link--medium location__btn">Ленинградская область</button>
+                <button class="link link--medium location__btn">Екатеринбург</button>
+                <button class="link link--medium location__btn">Краснодар</button>
+                <button class="link link--medium location__btn">Красноярск</button>
+                <button class="link link--medium location__btn">Новосибирск</button>
+              </div>
+              <div class="location__col">
+                <button class="link link--medium location__btn">Челябинск</button>
+                <button class="link link--medium location__btn">Ростов-на-Дону</button>
+                <button class="link link--medium location__btn">Тюмень</button>
+                <button class="link link--medium location__btn">Уфа</button>
+                <button class="link link--medium location__btn">Казань</button>
+                <button class="link link--medium location__btn">Пермь</button>
+                <button class="link link--medium location__btn">Нижний Новгород</button>
+                <button class="link link--medium location__btn">Самара</button>
+              </div>
+              <div class="location__col">
+                <button class="link link--medium location__btn">Саратов</button>
+                <button class="link link--medium location__btn">Омск</button>
+                <button class="link link--medium location__btn">Балашиха</button>
+                <button class="link link--medium location__btn">Волгоград</button>
+                <button class="link link--medium location__btn">Воронеж</button>
+                <button class="link link--medium location__btn">Иркутск</button>
+                <button class="link link--medium location__btn">Хабаровск</button>
+                <button class="link link--medium location__btn">Томск</button>
+              </div>
+              <div class="location__col">
+                <button class="link link--medium location__btn">Ярославль</button>
+                <button class="link link--medium location__btn">Сочи</button>
+                <button class="link link--medium location__btn">Сургут</button>
+                <button class="link link--medium location__btn">Подольск</button>
+                <button class="link link--medium location__btn">Мытищи</button>
+                <button class="link link--medium location__btn">Владивосток</button>
+                <button class="link link--medium location__btn">Калуга</button>
+                <button class="link link--medium location__btn">Пятигорск</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>

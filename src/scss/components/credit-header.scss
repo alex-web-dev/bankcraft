@@ -1,0 +1,50 @@
+.credit-header {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    position: relative;
+    margin-right: 8px;
+    flex: 0 0 auto;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8.33px;
+    border: 1px solid var(--color-gray-400);
+  }
+
+  &__logo-img {
+    max-width: 30px;
+  }
+
+  &__logo-status {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+  }
+
+  &__main {
+    flex: 1 1 auto;
+  }
+
+  &__title-info {
+    margin-left: 8px;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__info-text {
+    margin-top: 4px;
+  }
+}

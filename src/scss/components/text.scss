@@ -4,6 +4,10 @@
   line-height: 1.4;
   color: var(--color-black);
 
+  &--3xs {
+    font-size: 10px;
+  }
+
   &--2xs {
     font-size: 12px;
   }
@@ -52,12 +56,24 @@
     line-height: 1.5;
   }
 
+  &--05 {
+    color: rgba(var(--color-black--rgb), 0.5);
+  }
+
   &--white {
     color: var(--color-white);
   }
 
   &--primary {
     color: var(--color-primary);
+  }
+
+  &--orange {
+    color: var(--color-orange);
+  }
+
+  &--red {
+    color: var(--color-red);
   }
 
   &--light {
@@ -270,6 +286,10 @@
         margin-left: 5px;
       }
     }
+  }
+
+  &__space-nowrap {
+    white-space: nowrap;
   }
 
   @media (max-width: 767px) {

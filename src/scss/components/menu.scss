@@ -11,4 +11,28 @@
     margin-left: 32px;
     margin-top: 8px;
   }
+
+  &__link {
+    position: relative;
+
+    &--active {
+      cursor: default;
+
+      &:hover {
+        color: var(--color-black);
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -11px;
+        left: -1px;
+        width: calc(100% + 2px);
+        height: 1px;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+        pointer-events: none;
+      }
+    }
+  }
 }

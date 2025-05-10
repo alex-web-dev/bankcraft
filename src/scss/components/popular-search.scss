@@ -1,4 +1,4 @@
-@use '../mixins' as *;
+@use "../mixins" as *;
 
 .popular-search {
   &__content {
@@ -33,7 +33,7 @@
 
       &:after {
         margin-left: 10px;
-        @include pseudo-icon('../img/icons/next-white.svg', 12px, 12px);
+        @include pseudo-icon("../img/icons/next-white.svg", 12px, 12px);
         transition: transform 0.4s;
       }
 

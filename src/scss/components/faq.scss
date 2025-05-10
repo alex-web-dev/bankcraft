@@ -1,0 +1,7 @@
+.faq {
+  &__item {
+    &:not(:first-child) {
+      margin-top: 12px;
+    }
+  }
+}

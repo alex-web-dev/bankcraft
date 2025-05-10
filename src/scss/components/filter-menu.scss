@@ -1,0 +1,30 @@
+.filter-menu {
+  padding: 15px 20px;
+  width: 100%;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-400);
+  border-radius: 10px;
+
+  &--lg {
+    width: 218px;
+  }
+
+  &__item {
+    width: 100%;
+    display: block;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+
+  &__item-text {
+    padding: 5px 0;
+    display: block;
+    cursor: pointer;
+  }
+
+  &__item-input {
+    display: none;
+  }
+}

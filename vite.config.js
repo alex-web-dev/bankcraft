@@ -6,6 +6,7 @@ export default {
     rollupOptions: {
       input: {
         index: "index.html",
+        offers: "offers.html",
       },
     },
   },

@@ -1,4 +1,16 @@
 .credits {
+  &__filters {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__filters-item {
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
   &__list {
     margin-top: -32px;
     margin-left: -32px;
