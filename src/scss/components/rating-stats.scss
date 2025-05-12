@@ -1,0 +1,13 @@
+.rating-stats {
+  &__item {
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+
+    &--mt-xl {
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
+    }
+  }
+}

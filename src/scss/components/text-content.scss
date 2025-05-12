@@ -2,6 +2,22 @@
   font-size: 16px;
   line-height: 1.4;
 
+  &--light {
+    font-weight: 300;
+  }
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--semibold {
+    font-weight: 600;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
   h1,
   h2,
   h3,
@@ -58,6 +74,20 @@
     }
   }
 
+  &--mark-primary {
+    ul {
+      li {
+        &:before {
+          background-color: var(--color-primary);
+        }
+      }
+    }
+  }
+
+  a {
+    color: var(--color-primary);
+  }
+
   &--white {
     color: var(--color-white);
 
@@ -81,6 +111,42 @@
 
   &--sm {
     font-size: 14px;
+
+    ul {
+      li {
+        &:before {
+          margin-top: 9px;
+        }
+      }
+    }
+  }
+
+  &--xs {
+    font-size: 13px;
+
+    p,
+    ul,
+    li {
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+    }
+
+    ul {
+      li {
+        &:before {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  &--p-my-default {
+    p {
+      &:not(:first-child) {
+        margin-top: 12px;
+      }
+    }
   }
 
   @media (max-width: 767px) {
@@ -96,7 +162,7 @@
     h1 {
       font-size: 28px;
     }
-  
+
     h2 {
       font-size: 23px;
     }

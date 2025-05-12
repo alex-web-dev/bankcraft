@@ -1,0 +1,34 @@
+.rating-info {
+  &__value {
+    display: flex;
+    align-items: center;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  &__value-star {
+    margin-left: 8px;
+  }
+
+  &__text {
+    margin-top: 4px;
+  }
+
+  &__details {
+    margin-left: -20px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__detail {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  &__detail-label {
+    margin-bottom: 4px;
+  }
+}

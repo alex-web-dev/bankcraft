@@ -20,7 +20,7 @@
 @use "./components/logo";
 @use "./components/search";
 @use "./components/social-btns";
-@use "./components/rating";
+@use "./components/rating-stars";
 @use "./components/tooltip";
 @use "./components/accordion";
 @use "./components/breadcrumb";
@@ -34,6 +34,10 @@
 @use "./components/nav-btns";
 @use "./components/dropdown";
 @use "./components/popup";
+@use "./components/box";
+@use "./components/nav-links";
+@use "./components/progress-bar";
+@use "./components/map";
 @use "./components/header";
 @use "./components/main";
 @use "./components/section";
@@ -53,4 +57,12 @@
 @use "./components/filter-menu";
 @use "./components/credit-info";
 @use "./components/location";
+@use "./components/offer-feature";
+@use "./components/offer-header";
+@use "./components/rating-info";
+@use "./components/rating-item";
+@use "./components/rating-stats";
+@use "./components/rating";
+@use "./components/review-card";
+@use "./components/about";
 @use "./components/footer";

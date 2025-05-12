@@ -1,0 +1,11 @@
+.offer-feature {
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-gray-200);
+  border-radius: 8px;
+
+  &__icon {
+    margin-right: 12px;
+  }
+}

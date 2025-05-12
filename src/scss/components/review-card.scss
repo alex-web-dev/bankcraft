@@ -1,0 +1,27 @@
+.review-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--color-gray-200);
+  border-radius: 10px;
+
+  &__text {
+    margin-top: 12px;
+  }
+
+  &__footer {
+    margin-top: auto;
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 18px;
+    }
+  }
+}

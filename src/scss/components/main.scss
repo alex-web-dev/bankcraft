@@ -19,6 +19,12 @@
     }
   }
 
+  &__box {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
   @media (max-width: 1180px) {
     padding-bottom: 80px;
 

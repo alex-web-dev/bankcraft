@@ -20,10 +20,18 @@
 
   &--semibold {
     font-weight: 600;
+
+    strong {
+      font-weight: 600;
+    }
   }
 
   &--bold {
     font-weight: 700;
+
+    strong {
+      font-weight: 700;
+    }
   }
 
   &--white {
@@ -76,6 +84,16 @@
 
   &--items--end {
     align-items: flex-end;
+  }
+
+  strong {
+    font-weight: 500;
+  }
+
+  &--strong-primary {
+    strong {
+      color: var(--color-primary);
+    }
   }
 
   @media (max-width: 1180px) {

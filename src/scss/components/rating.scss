@@ -1,35 +1,78 @@
-@use "../mixins" as *;
-
 .rating {
-  display: flex;
-
-  &__stars {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-  }
-
-  &__star {
-    display: inline-block;
-    @include icon("../img/icons/star-gray-400.svg", 15px, 15px);
-  }
-
-  &__star:not(:first-child) {
-    margin-left: 4px;
-  }
-
-  &__active {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
+  &__header {
     display: flex;
-    align-items: center;
-    overflow: hidden;
+    align-items: flex-start;
+
+    &--between {
+      justify-content: space-between;
+    }
   }
 
-  &__active &__star {
-    background-image: url("../img/icons/star-orange.svg");
+  &__stats-lg {
+    margin-left: 30px;
+    flex: 0 1 632px;
+  }
+
+  &__reviews {
+    margin-top: -32px;
+    margin-left: -32px;
+    padding-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__review {
+    margin-top: 32px;
+    margin-left: 32px;
+    width: calc(33.33% - 32px);
+  }
+
+  &__link {
+    margin-top: 32px;
+  }
+
+  @media (max-width: 1180px) {
+    &__reviews {
+      padding-top: 60px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__header {
+      flex-direction: column;
+    }
+
+    &__stats-lg {
+      margin-top: 20px;
+      margin-left: 0;
+      width: 100%;
+      flex: none;
+    }
+
+    &__reviews {
+      margin-top: -20px;
+      margin-left: -20px;
+      padding-top: 40px;
+    }
+
+    &__review {
+      margin-top: 20px;
+      margin-left: 20px;
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__reviews {
+      padding-top: 32px;
+    }
+
+    &__review {
+      width: calc(100% - 20px);
+    }
+
+    &__link {
+      margin-top: 24px;
+    }
   }
 }

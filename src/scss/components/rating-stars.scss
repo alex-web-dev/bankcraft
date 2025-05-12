@@ -1,0 +1,44 @@
+@use "../mixins" as *;
+
+.rating-stars {
+  display: flex;
+
+  &__list {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__item {
+    display: inline-block;
+    @include icon("../img/icons/star-gray-400.svg", 15px, 15px);
+
+    &:not(:first-child) {
+      margin-left: 4px;
+    }
+
+    &--xl {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &--border &__item {
+    background-image: url("../img/icons/star-orange-border.svg");
+  }
+
+  &__active {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__active &__item {
+    background-image: url("../img/icons/star-orange.svg");
+  }
+}
