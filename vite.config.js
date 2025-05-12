@@ -7,6 +7,7 @@ export default {
       input: {
         index: "index.html",
         offers: "offers.html",
+        offer: "offer.html",
       },
     },
   },
