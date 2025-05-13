@@ -29,6 +29,27 @@
     }
   }
 
+  &__info-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+  }
+
+  &__info-tags {
+    margin-top: -8px;
+    margin-left: -12px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__info-tag {
+    margin-top: 8px;
+    margin-left: 12px;
+  }
+
   &__text {
     margin-top: 10px;
   }
@@ -42,11 +63,31 @@
     margin-top: 4px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+  }
+
+  &__author {
+    margin-right: auto;
+    padding-right: 12px;
+  }
+
+  &__views {
+    flex: 0 0 auto;
+    
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 
   &__rating-stars {
     margin-left: 20px;
+    flex: 0 0 auto;
+  }
+
+  @media (max-width: 991px) {
+    &__info-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   @media (max-width: 767px) {

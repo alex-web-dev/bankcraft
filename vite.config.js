@@ -9,6 +9,7 @@ export default {
         offers: "offers.html",
         offer: "offer.html",
         offerReviews: "offer-reviews.html",
+        blog: "blog.html",
       },
     },
   },
