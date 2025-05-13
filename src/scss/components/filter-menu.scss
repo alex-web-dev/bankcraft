@@ -22,9 +22,15 @@
     padding: 5px 0;
     display: block;
     cursor: pointer;
+    user-select: none;
   }
 
   &__item-input {
     display: none;
+  }
+
+  &__item-input:checked ~ &__item-text {
+    cursor: default;
+    color: var(--color-black);
   }
 }

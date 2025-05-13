@@ -9,12 +9,13 @@
 
   &__info {
     margin-right: 32px;
+    flex: 0 0 auto;
   }
 
   &__features {
     margin-top: -10px;
     margin-left: -20px;
-    margin-right: auto;
+    margin-right: 20px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -25,7 +26,8 @@
   }
 
   &__main-btn {
-    margin-left: 20px;
+    margin-left: auto;
+    flex: 0 0 auto;
   }
 
   &__links {
@@ -42,8 +44,12 @@
       margin-bottom: 20px;
     }
 
+    &__features {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
     &__main-btn {
-      margin-top: 20px;
       margin-left: 0;
     }
   }

@@ -1,0 +1,31 @@
+.reviews {
+  &__filters {
+    margin-top: -12px;
+    margin-left: -12px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__filters-item {
+    margin-top: 12px;
+    margin-left: 12px;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__filters-item {
+      width: 100%;
+
+      .filter-menu {
+        width: 100%;
+      }
+    }
+  }
+}

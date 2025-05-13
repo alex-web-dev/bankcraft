@@ -1,0 +1,72 @@
+.expert {
+  &__content {
+    padding-right: 80px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__main {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__info {
+    margin-right: 20px;
+    width: 233px;
+    flex: 0 0 auto;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+    border-radius: 25px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  &__comment {
+    flex: 1 1 auto;
+    max-width: 752px;
+  }
+
+  &__comment-title {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 1180px) {
+    &__content {
+      padding-right: 40px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__info {
+      width: 190px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      margin-bottom: 24px;
+    }
+    
+    &__main {
+      flex-direction: column;
+    }
+
+    &__info {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &__img {
+      margin-bottom: 12px;
+    }
+
+    &__comment-title {
+      margin-bottom: 12px;
+    }
+  }
+}

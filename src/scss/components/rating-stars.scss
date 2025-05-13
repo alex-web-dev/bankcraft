@@ -9,9 +9,13 @@
     align-items: center;
   }
 
+  &--reverse &__list {
+    margin-right: -4px;
+  }
+
   &__item {
     display: inline-block;
-    @include icon("../img/icons/star-gray-400.svg", 15px, 15px);
+    @include icon("../img/icons/star-orange-border.svg", 15px, 15px);
 
     &:not(:first-child) {
       margin-left: 4px;
@@ -23,8 +27,14 @@
     }
   }
 
-  &--border &__item {
-    background-image: url("../img/icons/star-orange-border.svg");
+  &--reverse &__item {
+    &:not(:first-child) {
+      margin-left: 0;
+    }
+
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
   }
 
   &__active {
@@ -36,6 +46,11 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+  }
+
+  &--reverse &__active {
+    left: unset;
+    right: 0;
   }
 
   &__active &__item {

@@ -58,6 +58,22 @@
           margin-left: 3px;
         }
       }
+
+      &.rating-stars--reverse {
+        .rating-stars__list {
+          margin-right: -3px;
+        }
+        
+        .rating-stars__item {
+          &:not(:first-child) {
+            margin-left: 0;
+          }
+          
+          &:not(:last-child) {
+            margin-right: 3px;
+          }
+        }
+      }
     }
 
     &__values {

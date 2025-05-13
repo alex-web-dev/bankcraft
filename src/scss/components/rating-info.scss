@@ -12,6 +12,12 @@
     margin-left: 8px;
   }
 
+  &__value-text {
+    margin-left: 8px;
+    margin-bottom: 7px;
+    align-self: flex-end;
+  }
+
   &__text {
     margin-top: 4px;
   }
@@ -30,5 +36,21 @@
 
   &__detail-label {
     margin-bottom: 4px;
+  }
+
+  &__stats {
+    margin-top: 20px;
+  }
+
+  &__meta {
+    margin-top: -12px;
+    margin-left: -12px;
+    padding-top: 4px;
+    display: flex;
+  }
+
+  &__meta-item {
+    margin-top: 12px;
+    margin-left: 12px;
   }
 }

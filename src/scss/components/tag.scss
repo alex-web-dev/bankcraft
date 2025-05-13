@@ -3,15 +3,54 @@
   &__switch {
     padding: 8px 20px;
     display: inline-flex;
+    align-items: center;
     background-color: var(--color-white);
     border-radius: 10px;
     border: 1px solid var(--color-gray-400);
     user-select: none;
     cursor: pointer;
-    transition: border 0.35s;
+    transition: border 0.35s, background 0.35s, color 0.35s;
 
     &:hover {
       border-color: var(--color-primary);
+    }
+
+    &--no-hover {
+      cursor: default;
+      user-select: auto;
+
+      &:hover {
+        border-color: var(--color-gray-400);
+      }
+    }
+  }
+
+  &--p-xs {
+    &,
+    &__switch {
+      padding: 6px 12px;
+    }
+  }
+
+  &__icon {
+    flex: 0 0 auto;
+
+    &:first-child:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &:last-child:not(:first-child) {
+      margin-left: 8px;
+    }
+
+    &--mx-lg {
+      &:first-child:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &:last-child:not(:first-child) {
+        margin-left: 10px;
+      }
     }
   }
 
@@ -25,6 +64,7 @@
   }
 
   &--active,
+  &--active-btn,
   &.tabs-btns__btn--active,
   &__input:checked ~ &__switch {
     background-color: var(--color-primary);
@@ -32,11 +72,26 @@
     border-color: var(--color-primary);
   }
 
+  &--active-btn {
+    &:hover {
+      background-color: var(--color-white);
+      border-color: var(--color-primary);
+      color: var(--color-black);
+    }
+  }
+
   @media (max-width: 767px) {
     &,
     &__switch {
       padding: 6px 16px;
       font-size: 14px;
+    }
+
+    &--p-xs {
+      &,
+      &__switch {
+        padding: 5px 10px;
+      }
     }
 
     &--switcher {

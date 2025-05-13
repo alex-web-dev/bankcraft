@@ -1,0 +1,18 @@
+.rating-features {
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    margin-top: -12px;
+    margin-left: -20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-top: 12px;
+    margin-left: 20px;
+    width: calc(50% - 20px);
+  }
+}

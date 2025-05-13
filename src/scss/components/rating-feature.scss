@@ -1,0 +1,26 @@
+.rating-feature {
+  display: flex;
+  align-items: center;
+
+  &__value {
+    padding: 8px 12px;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+  }
+
+  &__text {
+    margin-left: 11px;
+  }
+
+  @media (max-width: 767px) {
+    &__value {
+      padding: 5px 9px;
+      font-size: 13px;
+    }
+
+    &__text {
+      margin-left: 8px;
+      font-size: 12px;
+    }
+  }
+}

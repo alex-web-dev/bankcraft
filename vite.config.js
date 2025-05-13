@@ -8,6 +8,7 @@ export default {
         index: "index.html",
         offers: "offers.html",
         offer: "offer.html",
+        offerReviews: "offer-reviews.html",
       },
     },
   },
