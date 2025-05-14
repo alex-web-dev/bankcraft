@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="shortcut icon" href="./favicon.png" />
-    <title>БанкКрафт - Страница статей</title>
+    <title>БанкКрафт - Страница статьи</title>
   </head>
   <body>
     <header class="header">
@@ -30,7 +30,7 @@
                   <a class="link link--iflex link--medium menu__link" href="#">Банки</a>
                 </li>
                 <li class="menu__item">
-                  <a class="link link--iflex link--medium menu__link menu__link--active" href="#">Журнал</a>
+                  <a class="link link--iflex link--medium menu__link" href="blog.html">Журнал</a>
                 </li>
                 <li class="menu__item">
                   <a class="link link--iflex link--medium menu__link" href="#">Новости</a>
@@ -99,7 +99,7 @@
                   <a class="link link--iflex link--medium mobile-menu__link" href="#">Банки</a>
                 </li>
                 <li class="mobile-menu__item">
-                  <a class="link link--iflex link--medium mobile-menu__link mobile-menu__link--active" href="#">Журнал</a>
+                  <a class="link link--iflex link--medium mobile-menu__link" href="blog.html">Журнал</a>
                 </li>
                 <li class="mobile-menu__item">
                   <a class="link link--iflex link--medium mobile-menu__link" href="#">Новости</a>
@@ -118,7 +118,7 @@
     </header>
 
     <main class="main">
-      <section class="page-header">
+      <div class="page-header">
         <div class="container">
           <div class="page-header__content">
             <div class="page-header__body">
@@ -129,440 +129,360 @@
                       <a class="text text--sm breadcrumb__link" href="index.html">Главная</a>
                     </li>
                     <li class="breadcrumb__item">
-                      <span class="text text--sm breadcrumb__current">Статьи</span>
+                      <a class="text text--sm breadcrumb__link" href="blog.html">Статьи</a>
+                    </li>
+                    <li class="breadcrumb__item">
+                      <span class="text text--sm breadcrumb__current">Ипотека</span>
                     </li>
                   </ul>
                 </div>
-                <h1 class="title title--1 page-header__title">Полезные статьи и советы про финансы</h1>
-                <div class="text text--lg page-header__text">
-                  <p>Рассказываем о финансах, разбираем новые законы и даем советы, как приумножить доход</p>
-                </div>
-                <form class="search page-header__search">
-                  <div class="input search__input">
-                    <input class="input__field input__field--rounded-2xl input__field--gray-300" type="text" placeholder="Поиск" />
-                  </div>
-                  <button class="icon search__btn">
-                    <img class="icon__img" src="img/icons/search.svg" alt="" />
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="section main__section main__section--mt-2xs">
-        <div class="container">
-          <div class="section__content">
-            <div class="tags">
-              <div class="tags__list">
-                <!-- <button class="tag tag--active tags__item">Все займы</button> -->
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Все статьи</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" checked />
-                  <span class="tag__switch">Автокредиты</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Аналитика</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Бизнес</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Видео</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Вклады</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Дебетовые карты</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Займы</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Зарплата</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Инвестиции</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Ипотека</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Карты рассрочки</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Кредитная история</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Кредитные карты</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Кредиты</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Мошенничество</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Страхование</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Финансовые лайфхаки</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Финграмотность</span>
-                </label>
-                <label class="tag tag--switcher tags__item">
-                  <input class="tag__input" type="checkbox" />
-                  <span class="tag__switch">Штрафы</span>
-                </label>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <section class="section main__section main__section--mt-3xs">
+      <div class="article">
         <div class="container">
-          <div class="section__content">
-            <div class="articles">
-              <div class="articles__list">
-                <div class="article-item articles__item">
-                  <a class="article-item__img-box" href="article.html">
-                    <img class="article-item__img" src="img/article-item.jpg" alt="" />
-                  </a>
-                  <div class="article-item__info">
-                    <div class="article-item__info-header">
-                      <h3 class="title title--3 article-item__title"><a href="article.html">Название статьи</a></h3>
-                      <div class="article-item__info-tags">
-                        <div class="text text--sm article-item__info-tag">Кредиты</div>
-                        <div class="text text--sm article-item__info-tag">Право</div>
-                        <div class="text text--sm article-item__info-tag">ЦБ</div>
-                      </div>
-                    </div>
-                    <p class="text text--sm article-item__text">
-                      Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
-                      для текстов на латинице с начала XVI века.
-                    </p>
-                    <div class="article-item__footer">
-                      <div class="text text--xs text--light article-item__date">22.04.2025</div>
-                      <div class="article-item__footer-meta">
-                        <div class="text text--sm article-item__author">Автор статьи</div>
-                        <div class="text text--xs text--light text--iflex article-item__views">
-                          <span class="icon icon--2xs text__icon">
-                            <img class="icon__img" src="img/icons/eye.svg" alt="" />
-                          </span>
-                          <span>1234</span>
-                        </div>
-                        <div class="rating-stars article-item__rating">
-                          <div class="rating-stars__list">
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <div class="rating-stars__active" style="width: 100%">
-                              <div class="rating-stars__list">
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+          <div class="article__content">
+            <h1 class="title title--2 article__title">Стоит ли брать ипотеку в 2025 году или подождать снижения ставок: мнение эксперта</h1>
+            <p class="text text--lg article__text">
+              Рассказываем‚ в каком случае стоит оформить ипотеку в 2025 году‚ а в каком — отложить покупку жилья.
+            </p>
+            <div class="article__header">
+              <div class="article__header-left">
+                <div class="author article__author">
+                  <div class="author__img-box">
+                    <img class="author__img" src="img/expert.jpg" alt="" />
+                  </div>
+                  <div class="author__info">
+                    <div class="text text--medium author__name">Иванов Иван</div>
+                    <div class="text text--sm author__position">Специалист по кредитам</div>
                   </div>
                 </div>
-                <div class="article-item articles__item">
-                  <a class="article-item__img-box" href="article.html">
-                    <img class="article-item__img" src="img/article-item.jpg" alt="" />
-                  </a>
-                  <div class="article-item__info">
-                    <div class="article-item__info-header">
-                      <h3 class="title title--3 article-item__title"><a href="article.html">Название статьи</a></h3>
-                      <div class="article-item__info-tags">
-                        <div class="text text--sm article-item__info-tag">Кредиты</div>
-                        <div class="text text--sm article-item__info-tag">Право</div>
-                        <div class="text text--sm article-item__info-tag">ЦБ</div>
-                      </div>
-                    </div>
-                    <p class="text text--sm article-item__text">
-                      Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
-                      для текстов на латинице с начала XVI века.
-                    </p>
-                    <div class="article-item__footer">
-                      <div class="text text--xs text--light article-item__date">22.04.2025</div>
-                      <div class="article-item__footer-meta">
-                        <div class="text text--sm article-item__author">Автор статьи</div>
-                        <div class="text text--xs text--light text--iflex article-item__views">
-                          <span class="icon icon--2xs text__icon">
-                            <img class="icon__img" src="img/icons/eye.svg" alt="" />
-                          </span>
-                          <span>1234</span>
-                        </div>
-                        <div class="rating-stars article-item__rating">
-                          <div class="rating-stars__list">
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <div class="rating-stars__active" style="width: 100%">
-                              <div class="rating-stars__list">
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <div class="social-btns article__social-btns">
+                  <div class="social-btns__list">
+                    <a class="social-btns__item" href="#" target="_blank">
+                      <img src="img/icons/vk-dark.svg" alt="" />
+                    </a>
+                    <a class="social-btns__item" href="#" target="_blank">
+                      <img src="img/icons/telegram-dark.svg" alt="" />
+                    </a>
                   </div>
                 </div>
-                <div class="article-item articles__item">
-                  <a class="article-item__img-box" href="article.html">
-                    <img class="article-item__img" src="img/article-item.jpg" alt="" />
-                  </a>
-                  <div class="article-item__info">
-                    <div class="article-item__info-header">
-                      <h3 class="title title--3 article-item__title"><a href="article.html">Название статьи</a></h3>
-                      <div class="article-item__info-tags">
-                        <div class="text text--sm article-item__info-tag">Кредиты</div>
-                        <div class="text text--sm article-item__info-tag">Право</div>
-                        <div class="text text--sm article-item__info-tag">ЦБ</div>
-                      </div>
-                    </div>
-                    <p class="text text--sm article-item__text">
-                      Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
-                      для текстов на латинице с начала XVI века.
-                    </p>
-                    <div class="article-item__footer">
-                      <div class="text text--xs text--light article-item__date">22.04.2025</div>
-                      <div class="article-item__footer-meta">
-                        <div class="text text--sm article-item__author">Автор статьи</div>
-                        <div class="text text--xs text--light text--iflex article-item__views">
-                          <span class="icon icon--2xs text__icon">
-                            <img class="icon__img" src="img/icons/eye.svg" alt="" />
-                          </span>
-                          <span>1234</span>
-                        </div>
-                        <div class="rating-stars article-item__rating">
-                          <div class="rating-stars__list">
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <div class="rating-stars__active" style="width: 100%">
-                              <div class="rating-stars__list">
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <div class="article__meta">
+                  <div class="text text--sm text--iflex article__meta-item">
+                    <span class="icon icon--xs text__icon">
+                      <img class="icon__img icon__img--full" src="img/icons/clock.svg" alt="" />
+                    </span>
+                    <span>6 мин.</span>
                   </div>
-                </div>
-                <div class="article-item articles__item">
-                  <a class="article-item__img-box" href="article.html">
-                    <img class="article-item__img" src="img/article-item.jpg" alt="" />
-                  </a>
-                  <div class="article-item__info">
-                    <div class="article-item__info-header">
-                      <h3 class="title title--3 article-item__title"><a href="article.html">Название статьи</a></h3>
-                      <div class="article-item__info-tags">
-                        <div class="text text--sm article-item__info-tag">Кредиты</div>
-                        <div class="text text--sm article-item__info-tag">Право</div>
-                        <div class="text text--sm article-item__info-tag">ЦБ</div>
-                      </div>
-                    </div>
-                    <p class="text text--sm article-item__text">
-                      Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
-                      для текстов на латинице с начала XVI века.
-                    </p>
-                    <div class="article-item__footer">
-                      <div class="text text--xs text--light article-item__date">22.04.2025</div>
-                      <div class="article-item__footer-meta">
-                        <div class="text text--sm article-item__author">Автор статьи</div>
-                        <div class="text text--xs text--light text--iflex article-item__views">
-                          <span class="icon icon--2xs text__icon">
-                            <img class="icon__img" src="img/icons/eye.svg" alt="" />
-                          </span>
-                          <span>1234</span>
-                        </div>
-                        <div class="rating-stars article-item__rating">
-                          <div class="rating-stars__list">
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <div class="rating-stars__active" style="width: 100%">
-                              <div class="rating-stars__list">
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="article-item articles__item">
-                  <a class="article-item__img-box" href="article.html">
-                    <img class="article-item__img" src="img/article-item.jpg" alt="" />
-                  </a>
-                  <div class="article-item__info">
-                    <div class="article-item__info-header">
-                      <h3 class="title title--3 article-item__title"><a href="article.html">Название статьи</a></h3>
-                      <div class="article-item__info-tags">
-                        <div class="text text--sm article-item__info-tag">Кредиты</div>
-                        <div class="text text--sm article-item__info-tag">Право</div>
-                        <div class="text text--sm article-item__info-tag">ЦБ</div>
-                      </div>
-                    </div>
-                    <p class="text text--sm article-item__text">
-                      Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
-                      для текстов на латинице с начала XVI века.
-                    </p>
-                    <div class="article-item__footer">
-                      <div class="text text--xs text--light article-item__date">22.04.2025</div>
-                      <div class="article-item__footer-meta">
-                        <div class="text text--sm article-item__author">Автор статьи</div>
-                        <div class="text text--xs text--light text--iflex article-item__views">
-                          <span class="icon icon--2xs text__icon">
-                            <img class="icon__img" src="img/icons/eye.svg" alt="" />
-                          </span>
-                          <span>1234</span>
-                        </div>
-                        <div class="rating-stars article-item__rating">
-                          <div class="rating-stars__list">
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <div class="rating-stars__active" style="width: 100%">
-                              <div class="rating-stars__list">
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="article-item articles__item">
-                  <a class="article-item__img-box" href="article.html">
-                    <img class="article-item__img" src="img/article-item.jpg" alt="" />
-                  </a>
-                  <div class="article-item__info">
-                    <div class="article-item__info-header">
-                      <h3 class="title title--3 article-item__title"><a href="article.html">Название статьи</a></h3>
-                      <div class="article-item__info-tags">
-                        <div class="text text--sm article-item__info-tag">Кредиты</div>
-                        <div class="text text--sm article-item__info-tag">Право</div>
-                        <div class="text text--sm article-item__info-tag">ЦБ</div>
-                      </div>
-                    </div>
-                    <p class="text text--sm article-item__text">
-                      Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
-                      для текстов на латинице с начала XVI века.
-                    </p>
-                    <div class="article-item__footer">
-                      <div class="text text--xs text--light article-item__date">22.04.2025</div>
-                      <div class="article-item__footer-meta">
-                        <div class="text text--sm article-item__author">Автор статьи</div>
-                        <div class="text text--xs text--light text--iflex article-item__views">
-                          <span class="icon icon--2xs text__icon">
-                            <img class="icon__img" src="img/icons/eye.svg" alt="" />
-                          </span>
-                          <span>1234</span>
-                        </div>
-                        <div class="rating-stars article-item__rating">
-                          <div class="rating-stars__list">
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <span class="rating-stars__item"></span>
-                            <div class="rating-stars__active" style="width: 100%">
-                              <div class="rating-stars__list">
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                                <span class="rating-stars__item"></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="text text--sm text--iflex article__meta-item">
+                    <span class="icon text__icon">
+                      <img class="icon__img icon__img--full" src="img/icons/eye.svg" alt="" />
+                    </span>
+                    <span>1234</span>
                   </div>
                 </div>
               </div>
+              <div class="article__header-right">
+                <div class="article__dates">
+                  <div class="text text--medium article__date">08:04:2025 09:14</div>
+                  <div class="text text--sm article__date article__date--update">обновлено 16:04:2025 22:01</div>
+                </div>
+                <div class="article__tags">
+                  <div class="text text--medium article__tag">Займы</div>
+                  <div class="text text--medium article__tag">Кредиты</div>
+                </div>
+              </div>
             </div>
-            <div class="section__footer section__footer--column">
-              <button class="btn btn--white-border section__footer-btn">Показать еще (60)</button>
-              <div class="pagination section__footer-pagination">
-                <div class="pagination__list">
-                  <a class="pagination__link pagination__link--disabled" href="#">
-                    <span class="icon">
-                      <img class="icon__img icon__img--rotate-180deg" src="img/icons/next-primary.svg" alt="" />
-                    </span>
+            <div class="article__links">
+              <a class="article__links-item" href="#">Статьи автора</a>
+              <a class="article__links-item" href="#">Список авторов</a>
+            </div>
+            <div class="article-nav article__nav box">
+              <a class="link link--xl link--medium article-nav__link" href="#article-1">Что такое льготная ипотека</a>
+              <a class="link link--xl link--medium article-nav__link" href="#article-2">Какие льготные ипотеки есть в ВТБ в 2025 году</a>
+              <a class="link link--xl link--medium article-nav__link" href="#article-3">Какие условия по семейной ипотеке</a>
+            </div>
+            <div class="article-text article__text-content">
+              <h2 id="article-1">Что такое льготная ипотека</h2>
+              <p>
+                Льготная ипотека — это жилищный кредит с субсидированием процентной ставки правительством РФ. Например, если ставка по рынку
+                — 25% годовых, то в рамках самой популярной льготной семейной ипотеки договор заключают под 7% годовых. Разницу в виде 18%
+                банк получает от государства.
+              </p>
+              <p>
+                То есть льготные ипотечные программы софинансирует государство. И только оно решает, на каких условиях выдавать такие
+                кредиты, кому они доступны, и в течение какого периода действует программа.
+              </p>
+              <blockquote>
+                Все государственные льготные ипотечные программы временные. Кроме того, правительство может вносить в них изменения.
+                Актуальную информацию смотрите на сайте ВТБ.
+              </blockquote>
+              <h2 id="article-2">Какие льготные ипотеки есть в ВТБ в 2025 году</h2>
+              <p>
+                Теперь рассмотрим виды субсидированной ипотеки, которую можно оформить в ВТБ в 2025 году. Основная из них — семейная. Она
+                пользуется наибольшим спросом, поэтому расскажем о ее условиях более подробно отдельно ниже.
+              </p>
+              <h2 id="article-3">ИТ</h2>
+              <p>
+                Предложение для сотрудников ИТ-компаний, которые входят в специальный реестр Минцифры. Вы можете узнать, соответствует ли
+                ваш работодатель требованиям, на Госуслугах. Введите ИНН фирмы или ее юридическое название, сразу увидите, входит ли она в
+                список. Если да, можете рассчитывать на льготную ипотеку.
+              </p>
+              <p>Условия:</p>
+              <ul>
+                <li>ставка 6% годовых;</li>
+                <li>сумма до 18 млн рублей для МСК и СПб, до 9 млн рублей — в другом случае;</li>
+                <li>срок до 30 лет;</li>
+                <li>первый взнос от 20%;</li>
+                <li>можно купить новостройку, которую аккредитовал ВТБ, — вот список для всех городов РФ.</li>
+              </ul>
+              <span class="br-small"></span>
+              <p>Отдельные требования к заемщику:</p>
+              <ol>
+                <li>работа в аккредитованной ИТ-компании;</li>
+                <li>возраст от 18 до 50 лет;</li>
+                <li>стаж работы в ней на момент подачи заявки — от 3 месяцев;</li>
+                <li>зарплата от 150 000 рублей в месяц для МО, ЛО и городов-миллионников, от 90 000 рублей — для других территорий.</li>
+              </ol>
+              <div class="table">
+                <div class="table__content">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>
+                          Место в
+                          <br />
+                          рейтинге
+                        </th>
+                        <th>
+                          Название
+                          <br />
+                          вклада
+                        </th>
+                        <th>
+                          Название
+                          <br />
+                          банка
+                        </th>
+                        <th>
+                          Срок,
+                          <br />
+                          дни
+                        </th>
+                        <th>
+                          Минимальная
+                          <br />
+                          сумма, рубли
+                        </th>
+                        <th>
+                          Эффективная
+                          <br />
+                          ставка, %
+                        </th>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>“Выгодный старт”</td>
+                        <td>“Санкт-Петербург”</td>
+                        <td>91</td>
+                        <td>10 000</td>
+                        <td>22</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>“Капитал Социальный”</td>
+                        <td>Новикомбанк</td>
+                        <td>91</td>
+                        <td>10 000</td>
+                        <td>21,2</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>“Новые деньги”</td>
+                        <td>Русский Стандарт</td>
+                        <td>91</td>
+                        <td>100 000</td>
+                        <td>21</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="img">
+                <img src="img/article-img.jpg" alt="" />
+                <div class="img-text">Ставки разных банков по ипотеке на первичном рынке</div>
+              </div>
+            </div>
+            <div class="article__rate box">
+              <div class="title title--3 article__rate-title">Нам важно Ваше мнение</div>
+              <div class="rating-control article__rating-control">
+                <div class="rating-control__list">
+                  <input class="rating-control__input" id="article-rate-5" type="radio" name="rate" value="5" checked />
+                  <label class="rating-control__label" for="article-rate-5"></label>
+                  <input class="rating-control__input" id="article-rate-4" type="radio" name="rate" value="4" />
+                  <label class="rating-control__label" for="article-rate-4"></label>
+                  <input class="rating-control__input" id="article-rate-3" type="radio" name="rate" value="3" />
+                  <label class="rating-control__label" for="article-rate-3"></label>
+                  <input class="rating-control__input" id="article-rate-2" type="radio" name="rate" value="2" />
+                  <label class="rating-control__label" for="article-rate-2"></label>
+                  <input class="rating-control__input" id="article-rate-1" type="radio" name="rate" value="1" />
+                  <label class="rating-control__label" for="article-rate-1"></label>
+                </div>
+              </div>
+            </div>
+            <div class="article__footer">
+              <div class="article__features">
+                <div class="tag tag--p-xs tag--no-hover article__feature">
+                  <span>Ипотека</span>
+                </div>
+                <div class="tag tag--p-xs tag--no-hover article__feature">
+                  <span>Кредиты</span>
+                </div>
+              </div>
+              <div class="article__footer-right">
+                <div class="article__controls">
+                  <button class="tag tag--p-xs article__control">
+                    <div class="icon icon--sm tag__icon">
+                      <img class="icon__img" src="img/icons/like.svg" alt="" />
+                    </div>
+                    <span>16</span>
+                  </button>
+                  <button class="tag tag--p-xs article__control">
+                    <div class="icon icon--sm tag__icon">
+                      <img class="icon__img" src="img/icons/chat.svg" alt="" />
+                    </div>
+                    <span>2</span>
+                  </button>
+                  <button class="tag tag--p-xs article__control">
+                    <div class="icon icon--sm tag__icon">
+                      <img class="icon__img" src="img/icons/share.svg" alt="" />
+                    </div>
+                    <span>16</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn--text-sm btn--px-xl article__comment-btn">Оставить комментарий</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="section main__section">
+        <div class="container">
+          <div class="section__content">
+            <h2 class="title title--2 title--center section__title">Похожие статьи</h2>
+            <div class="articles">
+              <div class="articles__list">
+                <div class="article-item articles__item articles__item--col-3">
+                  <a class="article-item__img-box" href="article.html">
+                    <img class="article-item__img" src="img/article-item.jpg" alt="" />
                   </a>
-                  <span class="pagination__active">1</span>
-                  <a class="pagination__link" href="#">2</a>
-                  <a class="pagination__link" href="#">3</a>
-                  <a class="pagination__link pagination__link--transparent" href="#">...</a>
-                  <a class="pagination__link" href="#">9</a>
-                  <a class="pagination__link pagination__link--right" href="#">
-                    <span class="icon">
-                      <img class="icon__img" src="img/icons/next-primary.svg" alt="" />
-                    </span>
+                  <div class="article-item__info">
+                    <h3 class="title title--3 article-item__title"><a href="article.html">Название статьи</a></h3>
+                    <p class="text text--sm article-item__text">
+                      Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
+                      для текстов на латинице с начала XVI века.
+                    </p>
+                    <div class="article-item__footer">
+                      <div class="text text--xs text--light article-item__date">22.04.2025</div>
+                      <div class="article-item__footer-meta">
+                        <div class="text text--sm article-item__author">Автор статьи</div>
+                        <div class="rating-stars article-item__rating">
+                          <div class="rating-stars__list">
+                            <span class="rating-stars__item"></span>
+                            <span class="rating-stars__item"></span>
+                            <span class="rating-stars__item"></span>
+                            <span class="rating-stars__item"></span>
+                            <span class="rating-stars__item"></span>
+                            <div class="rating-stars__active" style="width: 100%">
+                              <div class="rating-stars__list">
+                                <span class="rating-stars__item"></span>
+                                <span class="rating-stars__item"></span>
+                                <span class="rating-stars__item"></span>
+                                <span class="rating-stars__item"></span>
+                                <span class="rating-stars__item"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="article-item articles__item articles__item--col-3">
+                  <a class="article-item__img-box" href="article.html">
+                    <img class="article-item__img" src="img/article-item.jpg" alt="" />
                   </a>
+                  <div class="article-item__info">
+                    <h3 class="title title--3 article-item__title"><a href="article.html">Название статьи</a></h3>
+                    <p class="text text--sm article-item__text">
+                      Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
+                      для текстов на латинице с начала XVI века.
+                    </p>
+                    <div class="article-item__footer">
+                      <div class="text text--xs text--light article-item__date">22.04.2025</div>
+                      <div class="article-item__footer-meta">
+                        <div class="text text--sm article-item__author">Автор статьи</div>
+                        <div class="rating-stars article-item__rating">
+                          <div class="rating-stars__list">
+                            <span class="rating-stars__item"></span>
+                            <span class="rating-stars__item"></span>
+                            <span class="rating-stars__item"></span>
+                            <span class="rating-stars__item"></span>
+                            <span class="rating-stars__item"></span>
+                            <div class="rating-stars__active" style="width: 100%">
+                              <div class="rating-stars__list">
+                                <span class="rating-stars__item"></span>
+                                <span class="rating-stars__item"></span>
+                                <span class="rating-stars__item"></span>
+                                <span class="rating-stars__item"></span>
+                                <span class="rating-stars__item"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="article-item articles__item articles__item--col-3">
+                  <a class="article-item__img-box" href="article.html">
+                    <img class="article-item__img" src="img/article-item.jpg" alt="" />
+                  </a>
+                  <div class="article-item__info">
+                    <h3 class="title title--3 article-item__title"><a href="article.html">Название статьи</a></h3>
+                    <p class="text text--sm article-item__text">
+                      Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
+                      для текстов на латинице с начала XVI века.
+                    </p>
+                    <div class="article-item__footer">
+                      <div class="text text--xs text--light article-item__date">22.04.2025</div>
+                      <div class="article-item__footer-meta">
+                        <div class="text text--sm article-item__author">Автор статьи</div>
+                        <div class="rating-stars article-item__rating">
+                          <div class="rating-stars__list">
+                            <span class="rating-stars__item"></span>
+                            <span class="rating-stars__item"></span>
+                            <span class="rating-stars__item"></span>
+                            <span class="rating-stars__item"></span>
+                            <span class="rating-stars__item"></span>
+                            <div class="rating-stars__active" style="width: 100%">
+                              <div class="rating-stars__list">
+                                <span class="rating-stars__item"></span>
+                                <span class="rating-stars__item"></span>
+                                <span class="rating-stars__item"></span>
+                                <span class="rating-stars__item"></span>
+                                <span class="rating-stars__item"></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

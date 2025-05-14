@@ -38,6 +38,7 @@
 @use "./components/nav-links";
 @use "./components/progress-bar";
 @use "./components/map";
+@use "./components/author";
 @use "./components/header";
 @use "./components/main";
 @use "./components/section";
@@ -62,6 +63,7 @@
 @use "./components/rating-info";
 @use "./components/rating-item";
 @use "./components/rating-stats";
+@use "./components/rating-control";
 @use "./components/rating";
 @use "./components/review-card";
 @use "./components/about";
@@ -70,4 +72,7 @@
 @use "./components/review-item";
 @use "./components/reviews";
 @use "./components/expert";
+@use "./components/article-nav";
+@use "./components/article-text";
+@use "./components/article";
 @use "./components/footer";

@@ -16,6 +16,14 @@
     &--rotate-90deg {
       transform: rotate(90deg);
     }
+
+    &--default {
+      width: 24px;
+    }
+
+    &--full {
+      width: 100%;
+    }
   }
 
   &--xl {
@@ -31,6 +39,11 @@
   &--sm {
     width: 22px;
     height: 22px;
+  }
+
+  &--xs {
+    width: 20px;
+    height: 20px;
   }
 
   &--2xs {

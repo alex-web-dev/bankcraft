@@ -10,6 +10,7 @@ export default {
         offer: "offer.html",
         offerReviews: "offer-reviews.html",
         blog: "blog.html",
+        article: "article.html",
       },
     },
   },

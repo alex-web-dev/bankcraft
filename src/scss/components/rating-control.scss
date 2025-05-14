@@ -1,0 +1,62 @@
+.rating-control {
+  &__list {
+    margin: 0 -5px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      background: url("../img/icons/star-orange-border.svg") center / cover no-repeat;
+      width: 32px;
+      height: 32px;
+    }
+
+    &:after {
+      content: "";
+      background: url("../img/icons/star-orange-border.svg") center / cover no-repeat;
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__input:checked ~ &__label:before {
+    background: url("../img/icons/star-orange.svg") center / cover no-repeat;
+  }
+
+  &__list:hover &__label {
+    &:before {
+      background: url("../img/icons/star-orange-border.svg") center / cover no-repeat;
+    }
+  }
+
+  &__list:hover &__label:hover,
+  &__list:hover &__label:hover ~ &__label {
+    &:before {
+      background: url("../img/icons/star-orange.svg") center / cover no-repeat;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__label {
+      width: 38px;
+      
+      &:before {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+}

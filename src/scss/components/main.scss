@@ -30,6 +30,7 @@
   }
 
   @media (max-width: 1180px) {
+    padding-top: 83px;
     padding-bottom: 80px;
 
     &__section {
@@ -39,10 +40,6 @@
         margin-top: 45px;
       }
     }
-  }
-
-  @media (max-width: 991px) {
-    padding-top: 83px;
   }
 
   @media (max-width: 767px) {
