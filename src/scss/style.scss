@@ -39,6 +39,7 @@
 @use "./components/progress-bar";
 @use "./components/map";
 @use "./components/author";
+@use "./components/contact-item";
 @use "./components/header";
 @use "./components/main";
 @use "./components/section";
@@ -79,4 +80,6 @@
 @use "./components/features";
 @use "./components/about-product";
 @use "./components/about-products";
+@use "./components/contacts";
+@use "./components/table-props";
 @use "./components/footer";

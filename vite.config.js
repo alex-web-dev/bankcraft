@@ -12,6 +12,7 @@ export default {
         blog: "blog.html",
         article: "article.html",
         about: "about.html",
+        contacts: "contacts.html",
       },
     },
   },

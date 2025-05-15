@@ -1,0 +1,19 @@
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+
+  &__img {
+    margin-right: 8px;
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+  }
+
+  &__info {
+    padding-top: 3px;
+  }
+
+  &__label {
+    margin-bottom: 4px;
+  }
+}

@@ -47,23 +47,6 @@
     margin-top: 20px;
     margin-left: 20px;
     width: calc(25% - 20px);
-    display: flex;
-    align-items: flex-start;
-  }
-
-  &__contact-img {
-    margin-right: 8px;
-    width: 26px;
-    height: 26px;
-    object-fit: contain;
-  }
-
-  &__contact-info {
-    padding-top: 3px;
-  }
-
-  &__contact-label {
-    margin-bottom: 4px;
   }
 
   &__info {
