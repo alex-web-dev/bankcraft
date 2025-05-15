@@ -14,9 +14,11 @@ $openBtns.forEach(($btn) => {
 });
 
 const $popups = document.querySelectorAll(".popup");
-$popups.forEach(($popup) => {
-  $popup.classList.add("popup--show");
+window.addEventListener("load", () => {
+  $popups.forEach(($popup) => $popup.classList.add("popup--show"));
+});
 
+$popups.forEach(($popup) => {
   const $closeBtns = $popup.querySelectorAll(".js-close-popup");
   $closeBtns.forEach(($closeBtn) => {
     $closeBtn?.addEventListener("click", () => closePopup($popup));

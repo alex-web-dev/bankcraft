@@ -1,0 +1,18 @@
+.about-product {
+  padding: 20px 12px 20px 20px;
+
+  &__icon-box {
+    margin-bottom: 4px;
+  }
+
+  @media (max-width: 767px) {
+    &__icon-box {
+      width: 36px;
+      height: 36px;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+  }
+}

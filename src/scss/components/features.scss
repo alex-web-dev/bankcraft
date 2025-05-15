@@ -1,0 +1,36 @@
+.features {
+  &__list {
+    margin-top: -32px;
+    margin-left: -32px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-top: 32px;
+    margin-left: 32px;
+    min-height: 290px;
+    width: calc(25% - 32px);
+  }
+
+  @media (max-width: 1180px) {
+    &__list {
+      margin-top: -20px;
+      margin-left: -20px;
+    }
+
+    &__item {
+      margin-top: 20px;
+      margin-left: 20px;
+      width: calc(50% - 20px);
+      min-height: 240px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__item {
+      width: calc(100% - 20px);
+      min-height: 260px;
+    }
+  }
+}

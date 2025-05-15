@@ -7,17 +7,22 @@
     background: linear-gradient(314.95deg, #b6f237 -2.93%, var(--color-primary) 79.06%);
     border-radius: 50px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 520px;
   }
 
   &__main {
+    height: 100%;
     display: flex;
     justify-content: space-between;
   }
 
   &__info {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     padding: 80px 32px;
+    flex: 0 1 545px;
 
     &:not(:last-child) {
       padding-right: 0;
@@ -29,17 +34,24 @@
   }
 
   &__img-box {
-    position: relative;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     z-index: 1;
-    margin-left: 30px;
-    flex: 0 0 554px;
+    flex: 0 0 auto;
+    width: 650px;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
   }
 
   &__img {
     margin-top: auto;
     display: block;
+    max-height: 100%;
+    min-height: 0;
+    object-fit: contain;
   }
 
   &__text {
@@ -50,7 +62,7 @@
 
   &__message {
     position: absolute;
-    left: 0;
+    left: 96px;
     bottom: 222px;
     padding: 15px 17px;
     display: flex;
@@ -127,12 +139,20 @@
   }
 
   @media (max-width: 1180px) {
+    &__content {
+      min-height: 394px;
+    }
+
     &__img-box {
-      flex-basis: 420px;
+      width: 440px;
+
+      &--lg {
+        width: 480px;
+      }
     }
 
     &__message {
-      left: -20px;
+      left: -15px;
       bottom: 174px;
     }
 
@@ -199,13 +219,22 @@
       border-radius: 24px;
     }
 
+    &__info {
+      flex: none;
+    }
+
     &__text {
       font-size: 16px;
     }
 
     &__img-box {
+      position: relative;
       margin-top: 0;
       width: 320px;
+
+      &--lg {
+        width: 380px;
+      }
     }
 
     &__message {
@@ -266,12 +295,20 @@
   @media (max-width: 380px) {
     &__img-box {
       max-width: 290px;
+
+      &--lg {
+        max-width: 320px;
+      }
     }
   }
 
   @media (max-width: 360px) {
     &__img-box {
       max-width: 250px;
+
+      &--lg {
+        max-width: 280px;
+      }
     }
 
     &__message {
