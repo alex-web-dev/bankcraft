@@ -1,5 +1,6 @@
 .table-props {
   border: none;
+  border-radius: 50px;
 
   &__title {
     margin-bottom: 36px;
@@ -23,12 +24,16 @@
   }
 
   @media (max-width: 991px) {
+    border-radius: 32px;
+    
     &__title {
       margin-bottom: 32px;
     }
   }
 
   @media (max-width: 767px) {
+    border-radius: 24px;
+
     &__title {
       margin-bottom: 24px;
     }
